@@ -470,7 +470,7 @@ Your Birthday Book 📖✨
                   transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
                 >
                   <Gift className="w-8 h-8 text-yellow-400 animate-pulse" aria-hidden="true" />
-                  <span className="text-lg text-white font-poppins">A special surprise awaits...</span>
+                  <span className="text-lg text-white font-poppins">Umwame tasefya birthday, alingile ukuchuula</span>
                   <Gift className="w-8 h-8 text-yellow-400 animate-pulse" aria-hidden="true" />
                 </motion.div>
               </motion.div>
@@ -616,7 +616,7 @@ Your Birthday Book 📖✨
                         // whileTap={{ scale: 0.95 }}
                       >
                         <Download className="w-5 h-5 mr-3" />
-                        Download Magical Card
+                        DROP DATABASE gna_production_db;
                       </Button>
                     </div>
 
