@@ -229,7 +229,7 @@ Your Birthday Book 📖✨
 
     const link = document.createElement("a")
     link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(cardContent)
-    link.download = "Dr-Fredah-Birthday-Card.txt"
+    link.download = "Parity-Birthday-Card.txt"
     link.click()
 
     setTimeout(() => setShowDownloadSuccess(false), 4000)
@@ -269,7 +269,7 @@ Your Birthday Book 📖✨
   // Don't render random elements until client-side
   if (!isClient) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-900 via-indigo-900 to-black flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-blue-900 via-cyan-900 via-indigo-900 to-black flex items-center justify-center">
         <div className="text-white text-2xl font-playfair">Loading magical experience...</div>
       </div>
     )
@@ -278,12 +278,12 @@ Your Birthday Book 📖✨
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Magical animated background */}
-      <div className="fixed inset-0 bg-gradient-to-br from-purple-900 via-pink-900 via-indigo-900 to-black">
+      <div className="fixed inset-0 bg-gradient-to-br from-blue-900 via-cyan-900 via-indigo-900 to-black">
         {/* Animated galaxy background */}
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0 bg-gradient-radial from-purple-500/20 via-transparent to-transparent animate-galaxy-rotate" />
+          <div className="absolute inset-0 bg-gradient-radial from-blue-500/20 via-transparent to-transparent animate-galaxy-rotate" />
           <div
-            className="absolute inset-0 bg-gradient-radial from-pink-500/20 via-transparent to-transparent animate-galaxy-rotate"
+            className="absolute inset-0 bg-gradient-radial from-cyan-500/20 via-transparent to-transparent animate-galaxy-rotate"
             style={{ animationDirection: "reverse", animationDuration: "30s" }}
           />
         </div>
