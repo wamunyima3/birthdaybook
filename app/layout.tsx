@@ -7,13 +7,13 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
-  title: "🎉 Happy Birthday Dr. Fredah Banda! ✨",
-  description: "A magical birthday book celebration filled with love, wonder, and enchantment",
-  keywords: "birthday, celebration, magical, book, Dr. Fredah Banda",
-  authors: [{ name: "Birthday Magic Creator" }],
+  title: "🎉 Happy Birthday Parity Chizela! ✨",
+  description: "A legendary birthday book celebration filled with brotherhood, adventure, and good vibes",
+  keywords: "birthday, celebration, legendary, book, Parity Chizela",
+  authors: [{ name: "Birthday Book Creator" }],
   openGraph: {
-    title: "🎉 Happy Birthday Dr. Fredah Banda! ✨",
-    description: "A magical birthday book celebration",
+    title: "🎉 Happy Birthday Parity Chizela! ✨",
+    description: "A legendary birthday book celebration",
     type: "website",
   },
 }

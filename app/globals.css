@@ -169,8 +169,8 @@ body {
 
 @keyframes rainbowGlow {
   0% {
-    text-shadow: 0 0 2px #ff6b9d, 0 0 4px #ff6b9d, 0 0 6px #ff6b9d, 0 0 8px #ff6b9d, 0 0 10px #ff6b9d;
-    color: #ff6b9d;
+    text-shadow: 0 0 2px #4d9de0, 0 0 4px #4d9de0, 0 0 6px #4d9de0, 0 0 8px #4d9de0, 0 0 10px #4d9de0;
+    color: #4d9de0;
   }
   16.66% {
     text-shadow: 0 0 2px #ffd93d, 0 0 4px #ffd93d, 0 0 6px #ffd93d, 0 0 8px #ffd93d, 0 0 10px #ffd93d;
@@ -181,20 +181,20 @@ body {
     color: #6bcf7f;
   }
   50% {
-    text-shadow: 0 0 2px #4d9de0, 0 0 4px #4d9de0, 0 0 6px #4d9de0, 0 0 8px #4d9de0, 0 0 10px #4d9de0;
-    color: #4d9de0;
+    text-shadow: 0 0 2px #1976d2, 0 0 4px #1976d2, 0 0 6px #1976d2, 0 0 8px #1976d2, 0 0 10px #1976d2;
+    color: #1976d2;
   }
   66.66% {
-    text-shadow: 0 0 2px #e15554, 0 0 4px #e15554, 0 0 6px #e15554, 0 0 8px #e15554, 0 0 10px #e15554;
-    color: #e15554;
+    text-shadow: 0 0 2px #ffd93d, 0 0 4px #ffd93d, 0 0 6px #ffd93d, 0 0 8px #ffd93d, 0 0 10px #ffd93d;
+    color: #ffd93d;
   }
   83.33% {
-    text-shadow: 0 0 2px #f9844a, 0 0 4px #f9844a, 0 0 6px #f9844a, 0 0 8px #f9844a, 0 0 10px #f9844a;
-    color: #f9844a;
+    text-shadow: 0 0 2px #6bcf7f, 0 0 4px #6bcf7f, 0 0 6px #6bcf7f, 0 0 8px #6bcf7f, 0 0 10px #6bcf7f;
+    color: #6bcf7f;
   }
   100% {
-    text-shadow: 0 0 2px #ff6b9d, 0 0 4px #ff6b9d, 0 0 6px #ff6b9d, 0 0 8px #ff6b9d, 0 0 10px #ff6b9d;
-    color: #ff6b9d;
+    text-shadow: 0 0 2px #4d9de0, 0 0 4px #4d9de0, 0 0 6px #4d9de0, 0 0 8px #4d9de0, 0 0 10px #4d9de0;
+    color: #4d9de0;
   }
 }
 
@@ -232,7 +232,7 @@ body {
 
 /* Gradient text effects */
 .gradient-text {
-  background: linear-gradient(45deg, #ff6b9d, #ffd93d, #6bcf7f, #4d9de0);
+  background: linear-gradient(45deg, #4d9de0, #ffd93d, #6bcf7f, #1976d2);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -251,7 +251,7 @@ body {
 /* Magical border animation */
 .magical-border {
   position: relative;
-  background: linear-gradient(45deg, #ff6b9d, #ffd93d, #6bcf7f, #4d9de0);
+  background: linear-gradient(45deg, #4d9de0, #ffd93d, #6bcf7f, #1976d2);
   background-size: 400% 400%;
   animation: gradientShift 3s ease infinite;
   padding: 3px;

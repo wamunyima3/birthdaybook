@@ -213,28 +213,17 @@ export default function BirthdayBook() {
 
     // Create beautiful birthday card content
     const cardContent = `
-🌟 Happy Birthday Dr. Fredah Banda! 🌟
+🌟 Happy Birthday Parity Chizela! 🌟
 
-Once upon a time, in a world filled with ordinary days, 
-there came a special moment when the stars aligned to 
-celebrate someone extraordinary...
+On this day, we celebrate a true legend—Parity Chizela! A man whose loyalty runs deep, whose laughter fills every room, and whose friendship is a gift to all who know him.
 
-Dr. Fredah Banda, a woman whose brilliance shines brighter 
-than the morning sun, whose kindness touches hearts like 
-gentle rain on spring flowers, and whose smile could light 
-up the darkest of nights.
+Parity, may your year be filled with epic wins, new adventures, and moments that remind you how much you're appreciated. Here's to more memories, more success, and more good times ahead.
 
-Today, the universe celebrates YOU! May this new chapter 
-of your life be filled with adventures that make your heart 
-dance, dreams that soar beyond the clouds, and love that 
-grows deeper with each passing day.
+Keep being the awesome guy you are. The world's a better place with you in it. Cheers to you, bro! 🍻
 
-You are a masterpiece, a rare gem, a beautiful soul that 
-makes this world a better place simply by being in it. ✨
+Happy Birthday, Parity! 🎂🎉💙
 
-Happy Birthday, Dr. Fredah! 🎂🎉💖
-
-With love and magical wishes,
+With respect and brotherly wishes,
 Your Birthday Book 📖✨
     `
 
@@ -428,7 +417,7 @@ Your Birthday Book 📖✨
                 transition={{ duration: 1, delay: 0.5 }}
               >
                 <h1 className="font-playfair font-black text-6xl md:text-8xl lg:text-9xl mb-8 tracking-wider">
-                  {"Dr. Fredah Banda".split("").map((letter, index) => (
+                  {"Parity Chizela".split("").map((letter, index) => (
                     <motion.span
                       key={index}
                       className="inline-block animate-rainbow-glow"
@@ -588,17 +577,17 @@ Your Birthday Book 📖✨
                         repeat: Number.POSITIVE_INFINITY,
                       }}
                     >
-                      Happy Birthday, Beautiful! 🌹
+                      Happy Birthday, Legend! 🏆
                     </motion.h2>
 
                     {/* Enhanced story content */}
                     <div className="text-lg md:text-xl text-gray-800 leading-relaxed space-y-6 font-poppins max-w-4xl mx-auto">
                       {[
-                        "Once upon a time, in a world filled with ordinary days, there came a special moment when the stars aligned to celebrate someone extraordinary...",
-                        "Dr. Fredah Banda, a woman whose brilliance shines brighter than the morning sun, whose kindness touches hearts like gentle rain on spring flowers, and whose smile could light up the darkest of nights.",
-                        "Today, the universe celebrates YOU! May this new chapter of your life be filled with adventures that make your heart dance, dreams that soar beyond the clouds, and love that grows deeper with each passing day.",
-                        "You are a masterpiece, a rare gem, a beautiful soul that makes this world a better place simply by being in it. ✨",
-                        "Happy Birthday, Dr. Fredah! 🎂🎉💖",
+                        "In a world full of ordinary days, today stands out—because it's yours, Parity!",
+                        "Parity Chizela, a man whose energy lifts the room, whose loyalty is unmatched, and whose drive inspires everyone around him.",
+                        "May this year bring you new adventures, big wins, and the kind of happiness that lasts all year long.",
+                        "You're a real one, a true friend, and a legend in the making. Keep shining, bro! 💪",
+                        "Happy Birthday, Parity! 🎂🎉💙",
                       ].map((text, index) => (
                         <motion.p
                           key={index}
