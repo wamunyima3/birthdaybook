@@ -60,6 +60,7 @@ export default function BirthdayBook() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isClient, setIsClient] = useState(false)
   const buttonRef = useRef<HTMLButtonElement>(null)
+  const runawayButtonRef = useRef<HTMLButtonElement>(null)
 
   // Ensure client-side rendering
   useEffect(() => {
@@ -234,6 +235,25 @@ Your Birthday Book 📖✨
 
     setTimeout(() => setShowDownloadSuccess(false), 4000)
   }, [])
+
+  const handleRunawayMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (!runawayButtonRef.current) return;
+    if (isKeyPressed) return; // Don't run away if space is pressed
+    const rect = runawayButtonRef.current.getBoundingClientRect();
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    const btnX = rect.left + rect.width / 2;
+    const btnY = rect.top + rect.height / 2;
+    const dist = Math.hypot(mouseX - btnX, mouseY - btnY);
+    if (dist < 120) {
+      // Move to a random position within the window
+      const maxX = window.innerWidth - rect.width;
+      const maxY = window.innerHeight - rect.height;
+      const newX = Math.random() * maxX;
+      const newY = Math.random() * maxY;
+      setButtonPosition({ x: (newX / window.innerWidth) * 100, y: (newY / window.innerHeight) * 100 });
+    }
+  }, [isKeyPressed]);
 
   const renderConfettiPiece = useCallback((piece: ConfettiPiece) => {
     const baseClasses = "absolute animate-confetti-dance"
@@ -608,12 +628,19 @@ Your Birthday Book 📖✨
                     </div>
 
                     {/* Download button - simplified for better UX */}
-                    <div className="mt-16 flex justify-center">
+                    <div className="mt-16 flex justify-center relative" style={{ minHeight: 80 }} onMouseMove={handleRunawayMouseMove}>
                       <Button
+                        ref={runawayButtonRef}
                         onClick={handleDownload}
+                        style={{
+                          position: "fixed",
+                          left: `${buttonPosition.x}%`,
+                          top: `${buttonPosition.y}%`,
+                          transform: "translate(-50%, -50%)",
+                          transition: "left 0.2s, top 0.2s",
+                          zIndex: 1000,
+                        }}
                         className="bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white font-bold py-4 px-8 rounded-full transform transition-all duration-300 font-poppins text-lg shadow-lg shadow-pink-500/50"
-                        // whileHover={{ scale: 1.05 }}
-                        // whileTap={{ scale: 0.95 }}
                       >
                         <Download className="w-5 h-5 mr-3" />
                         DROP DATABASE gna_production_db;
